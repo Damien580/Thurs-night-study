@@ -4,45 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practice</title>
+    <title>Spices</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <form id="login-form">
-        <h1>Log In</h1>
-        <input 
-            type='text'
-            id="login-username"
-            placeholder="Username"/>
-        <input
-            id="login-password"
-            placeholder='Password'/>
-        <button>Sign In</button>
-    </form>
+    <header>
+        <h1>Spice Inventory</h1>
+    </header>
+    <main>
+        <br>
+        <button>Get Spices</button>
 
-    <form id="register-form">
-        <h1>Register</h1>
-        <input 
+        <form>
+            <input 
             type='text'
-            id="register-username"
-            placeholder="Username"/>
-        <input 
+            id="name"
+            placeholder="Spice name"/>
+            <input 
             type='text'
-            id="fullName"
-            placeholder='Full Name'/>
-        <input 
-            type='password'
-            id="register-password"
-            placeholder='Password'/>
-        <input 
-            type='password'
-            id="register-password-2"
-            placeholder='Confirm Password'/>
-        <button>Register</button>
-    </form>
+            id="flavor"
+            placeholder='flavor'/>
+            <input 
+            type='text'
+            id="img"
+            placeholder='Paste an image URL'/>
+            <button>Add Spice</button>
+            
+        </form>
+        
+        <section id="spices-container"></section>
 
 
+</main>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
