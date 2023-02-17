@@ -11,11 +11,11 @@ const {
     getSpices,
     addSpice,
     deleteSpice
-} = require('./controller')
+} = require("./controller/controller")
 
 app.get('/api/spices', getSpices)
 app.post('/api/spices', addSpice)
 app.delete('/api/spices/:id', deleteSpice)
 
 
-app.listen(4004, console.log(`App running on port 4000!`))
+app.listen(4004, console.log(`App running on port 4004!`))
